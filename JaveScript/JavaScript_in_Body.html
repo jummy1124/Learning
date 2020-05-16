@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript in Body</title>
+</head>
+<body>
+
+<h2>JavaScript in Body</h2>
+
+<p id="demo_1"></p>
+
+<script>
+    document.getElementById("demo_1").innerHTML = "My First JavaScript";
+</script>
+
+
+
+<p id="demo_2">A Hello.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<script>
+    function myFunction() {
+        document.getElementById("demo_2").innerHTML = "Hello changed.";
+    }
+</script>
+
+</body>
+</html>
