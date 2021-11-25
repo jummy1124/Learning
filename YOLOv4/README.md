@@ -43,6 +43,15 @@ class SELayer(nn.Module):
         return x * y
 ```
 
+datect.py 
+```
+# line 124:
+f.write(('%g ' * 6 + '\n') % (cls,conf, *xyxy))  # label format
+
+# line 125
+f.write(('%g ' * 5 + '\n') % (cls, *xywh))  # label format
+```
+
 ## Requirements
 
 docker (recommanded):
@@ -86,3 +95,8 @@ python train.py --device 0 --batch-size 16 --img 640 640 --data coco.yaml --cfg 
 python test.py --img 640 --conf 0.001 --batch 8 --device 0 --data coco.yaml --cfg cfg/yolov4-pacsp.cfg --weights weights/yolov4-pacsp.pt
 ```
 
+## Detection
+
+```
+python detect.py --source '' --cfg '' --weights '' --save-txt
+```
