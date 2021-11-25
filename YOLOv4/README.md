@@ -12,7 +12,7 @@ This is PyTorch implementation of [YOLOv4](https://github.com/AlexeyAB/darknet) 
 
 * `2021-11-25` - training YOLOv4 with Squeeze-and-Excitation Networks using PyTorch. [`paper link`](https://arxiv.org/pdf/1709.01507.pdf)
 
-<details>
+</details>
 
 ## Implementation
 
