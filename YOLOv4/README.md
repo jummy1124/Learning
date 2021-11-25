@@ -12,6 +12,8 @@ This is PyTorch implementation of [YOLOv4](https://github.com/AlexeyAB/darknet) 
 
 * `2021-11-25` - training YOLOv4 with Squeeze-and-Excitation Networks using PyTorch. [`paper link`](https://arxiv.org/pdf/1709.01507.pdf)
 
+<details>
+
 ## Implementation
 
 ### config 
@@ -86,13 +88,13 @@ pip install -r requirements.txt
 ## Training
 
 ```
-python train.py --device 0 --batch-size 16 --img 640 640 --data coco.yaml --cfg cfg/yolov4-pacsp.cfg --weights '' --name yolov4-pacsp
+python train.py --device 0 --batch-size 16 --img 640 640 --data data.yaml --cfg cfg/yolov4-pacsp.cfg --weights '' --name yolov4-pacsp
 ```
 
 ## Testing
 
 ```
-python test.py --img 640 --conf 0.001 --batch 8 --device 0 --data coco.yaml --cfg cfg/yolov4-pacsp.cfg --weights weights/yolov4-pacsp.pt
+python test.py --img 640 --conf 0.001 --batch 8 --device 0 --data data.yaml --cfg cfg/yolov4-pacsp.cfg --weights weights/yolov4-pacsp.pt
 ```
 
 ## Detection

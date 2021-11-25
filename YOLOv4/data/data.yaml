@@ -1,7 +1,7 @@
 # train and val datasets (image directory or *.txt file with image paths)
-train: D:/report/110-1/cnn/HW2/data/train/images  # 118k images
-val: D:/report/110-1/cnn/HW2/data/validation/images  # 5k images
-test: D:/report/110-1/cnn/HW2/data/test  # 20k images for submission to https://competitions.codalab.org/competitions/20794
+train: 
+val: 
+test: 
 
 # number of classes
 nc: 1
